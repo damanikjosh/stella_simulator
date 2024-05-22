@@ -2,6 +2,8 @@
 
 This is a non-official repository of Stella N2 robot simulation with ROS melodic and Gazebo 9.0.0.
 
+![Stella N2](screenshot.png)
+
 ## Installation
 
 1. Clone this repository in your workspace
