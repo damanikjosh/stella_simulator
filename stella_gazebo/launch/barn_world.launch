@@ -1,0 +1,17 @@
+<launch>
+  <arg name="world_idx" default="0"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find stella_gazebo)/worlds/BARN/world_$(arg world_idx).world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <include file="$(find stella_gazebo)/launch/spawn_stella.launch">
+    <arg name="x_pos" value="1.2"/>
+    <arg name="y_pos" value="0.9"/>
+    <arg name="z_pos" value="0"/>
+  </include>
+</launch>
